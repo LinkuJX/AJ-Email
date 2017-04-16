@@ -1,0 +1,22 @@
+DirectoryIndex index.php
+
+<FilesMatch "\.(?:html|php)$">
+	Order Allow,Deny
+	Allow from all
+</FilesMatch>
+
+<Files old/*>
+    deny from all
+</Files>
+
+<Files index.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+Options +ExecCGI
+AddHandler cgi-script .py

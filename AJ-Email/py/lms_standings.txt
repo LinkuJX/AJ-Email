@@ -1,0 +1,12 @@
+###Season standings
+|#|Team|Series|Games|Streak|Last 5|
+|:--:|:--|:--:|:--:|:--:|:--:|
+|1|Flash Wolves|8 - 0|16 - 1|12W|5-0|
+|2|ahq e-Sports Club|6 - 2|13 - 4|2L|3-2|
+|3|J Team|5 - 3|11 - 8|1L|1-4|
+|4|Machi E-Sports|5 - 3|11 - 9|1W|3-2|
+|5|Hong Kong Esports|5 - 4|13 - 10|4W|4-1|
+|6|Fireball|3 - 6|9 - 13|1W|2-3|
+|7|eXtreme Gamers|2 - 7|6 - 15|1L|3-2|
+|8|Wayi Spider|0 - 9|1 - 18|16L|0-5|
+

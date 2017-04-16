@@ -1,0 +1,10 @@
+###Season standings
+|A|#|Team|Series|Games|Streak|Last 5|B|#|Team|Series|Games|Streak|Last 5|
+|:--:|:--:|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--|:--:|:--:|:--:|:--:|:--:|
+||1|Royal Never Give Up|7 - 1|14 - 5|6W|5-0||1|Team WE|7 - 2|15 - 6|8W|5-0|
+||2|Invictus Gaming|5 - 4|13 - 9|2W|3-2||2|EDward Gaming|6 - 3|13 - 9|1L|2-3|
+||3|Snake Esports|4 - 4|8 - 10|4W|4-1||3|QG Reapers|5 - 4|13 - 10|3L|1-4|
+||4|Oh My God|4 - 5|10 - 11|1W|3-2||4|Game Talents|3 - 5|8 - 12|1W|3-2|
+||5|I May|4 - 5|9 - 12|2L|2-3||5|Newbee|3 - 6|9 - 14|2W|2-3|
+||6|LGD Gaming|2 - 7|7 - 14|3L|1-4||6|Vici Gaming|2 - 6|6 - 13|8L|0-5|
+

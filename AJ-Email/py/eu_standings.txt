@@ -1,0 +1,18 @@
+###Season standings
+|A|#|Team|Series|Games|Streak|Last 5|Information|
+|:--:|:--:|:--|:--:|:--:|:--:|:--:|:--:|
+||1|[G2 Esports](http://www.g2esports.com/)|10 - 0|20 - 5|1W|4-1|[EsportsWikis](http://lol.esportswikis.com/wiki/G2_Esports) \ [LoL Esports](http://www.lolesports.com/en_US/eu-lcs/eu_2017_spring/teams/g2-esports)|
+||2|[Misfits](http://teammisfits.gg/)|7 - 3|16 - 8|1L|1-4|[EsportsWikis](http://lol.esportswikis.com/wiki/Misfits_(European_Team\)) \ [LoL Esports](http://www.lolesports.com/en_US/eu-lcs/eu_2017_spring/teams/misfits)|
+||3|[Fnatic](http://www.fnatic.com/players/LoL/)|4 - 6|12 - 15|2L|1-4|[EsportsWikis](http://lol.esportswikis.com/wiki/Fnatic) \ [LoL Esports](http://www.lolesports.com/en_US/eu-lcs/eu_2017_spring/teams/fnatic)|
+||4|[Team ROCCAT](https://www.facebook.com/TEAMROCCAT/)|4 - 7|10 - 16|4W|4-1|[EsportsWikis](http://lol.esportswikis.com/wiki/Team_ROCCAT) \ [LoL Esports](http://www.lolesports.com/en_US/eu-lcs/eu_2017_spring/teams/roccat)|
+||5|[Giants Gaming](http://giantsgaming.pro/)|2 - 8|7 - 18|2L|2-3|[EsportsWikis](http://lol.esportswikis.com/wiki/Giants_Gaming) \ [LoL Esports](http://www.lolesports.com/en_US/eu-lcs/eu_2017_spring/teams/giants-gaming)|
+
+
+|B|#|Team|Series|Games|Streak|Last 5|Information|
+|:--:|:--:|:--|:--:|:--:|:--:|:--:|:--:|
+||1|[Unicorns Of Love](http://www.unicornsoflove.com/)|8 - 2|17 - 7|4W|4-1|[EsportsWikis](http://lol.esportswikis.com/wiki/Unicorns_Of_Love) \ [LoL Esports](http://www.lolesports.com/en_US/eu-lcs/eu_2017_spring/teams/unicorns-of-love)|
+||2|[H2k-Gaming](http://www.h2k.gg/)|7 - 3|16 - 7|2L|3-2|[EsportsWikis](http://lol.esportswikis.com/wiki/H2k-Gaming) \ [LoL Esports](http://www.lolesports.com/en_US/eu-lcs/eu_2017_spring/teams/h2k)|
+||3|[Splyce](https://splyce.gg/)|6 - 4|14 - 9|2L|3-2|[EsportsWikis](http://lol.esportswikis.com/wiki/Splyce) \ [LoL Esports](http://www.lolesports.com/en_US/eu-lcs/eu_2017_spring/teams/splyce)|
+||4|[Team Vitality](http://www.team-vitality.fr/teams)|3 - 7|8 - 15|2W|3-2|[EsportsWikis](http://lol.esportswikis.com/wiki/Team_Vitality) \ [LoL Esports](http://www.lolesports.com/en_US/eu-lcs/eu_2017_spring/teams/vitality)|
+||5|[Origen](https://origen.gg/)|0 - 11|2 - 22|5L|0-5|[EsportsWikis](http://lol.esportswikis.com/wiki/Origen) \ [LoL Esports](http://www.lolesports.com/en_US/eu-lcs/eu_2017_spring/teams/origen)|
+

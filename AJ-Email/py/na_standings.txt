@@ -1,0 +1,14 @@
+###Season standings
+|#|Team|Series|Games|Streak|Last 5|Information|
+|:--:|:--|:--:|:--:|:--:|:--:|:--:|
+|1|[Team SoloMid](http://tsm.gg/)|12 - 2|24 - 13|2W|4-1|[EsportsWikis](http://lol.esportswikis.com/wiki/Team_SoloMid) \ [LoL Esports](http://www.lolesports.com/en_US/na-lcs/na_2017_spring/teams/team-solomid)|
+|2|[Cloud9](http://cloud9.gg/)|11 - 3|24 - 10|1L|3-2|[EsportsWikis](http://lol.esportswikis.com/wiki/Cloud9) \ [LoL Esports](http://www.lolesports.com/en_US/na-lcs/na_2017_spring/teams/cloud9)|
+|3|[Phoenix1](http://phoenix1.gg/)|9 - 5|22 - 11|5W|5-0|[EsportsWikis](http://lol.esportswikis.com/wiki/Phoenix1) \ [LoL Esports](http://www.lolesports.com/en_US/na-lcs/na_2017_spring/teams/phoenix1)|
+|4|[Counter Logic Gaming](http://clgaming.net/)|8 - 7|18 - 19|3W|4-1|[EsportsWikis](http://lol.esportswikis.com/wiki/Counter_Logic_Gaming) \ [LoL Esports](http://www.lolesports.com/en_US/na-lcs/na_2017_spring/teams/counter-logic-gaming)|
+|5|[FlyQuest](https://www.flyquest.gg/)|7 - 7|17 - 16|6L|0-5|[EsportsWikis](http://lol.esportswikis.com/wiki/FlyQuest) \ [LoL Esports](http://www.lolesports.com/en_US/na-lcs/na_2017_spring/teams/flyquest)|
+|6|[Team Dignitas](http://team-dignitas.net/)|7 - 8|18 - 19|2W|4-1|[EsportsWikis](http://lol.esportswikis.com/wiki/Team_Dignitas) \ [LoL Esports](http://www.lolesports.com/en_US/na-lcs/na_2017_spring/teams/team-dignitas)|
+|7|[Immortals](https://immortals.gg/)|6 - 8|17 - 18|2L|3-2|[EsportsWikis](http://lol.esportswikis.com/wiki/Immortals) \ [LoL Esports](http://www.lolesports.com/en_US/na-lcs/na_2017_spring/teams/immortals)|
+|8|[Echo Fox](http://live.echofox.gg/)|5 - 10|13 - 23|2L|1-4|[EsportsWikis](http://lol.esportswikis.com/wiki/Echo_Fox) \ [LoL Esports](http://www.lolesports.com/en_US/na-lcs/na_2017_spring/teams/echo-fox)|
+|9|[Team Liquid](https://www.teamliquidpro.com/)|4 - 11|14 - 25|2L|2-3|[EsportsWikis](http://lol.esportswikis.com/wiki/Team_Liquid) \ [LoL Esports](http://www.lolesports.com/en_US/na-lcs/na_2017_spring/teams/team-liquid)|
+|10|[Team EnVyUs](https://teamenvyus.com/)|3 - 11|10 - 23|1L|1-4|[EsportsWikis](http://lol.esportswikis.com/wiki/Team_EnVyUs) \ [LoL Esports](http://www.lolesports.com/en_US/na-lcs/na_2017_spring/teams/team-envy)|
+

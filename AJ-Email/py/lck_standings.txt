@@ -1,0 +1,14 @@
+###Season standings
+|#|Team|Series|Games|Streak|Last 5|Information|
+|:--:|:--|:--:|:--:|:--:|:--:|:--:|
+|1|[SK Telecom T1](http://www.sksports.net/T1/main.asp)|12 - 1|24 - 6|1W|4-1|[EsportsWikis](http://lol.esportswikis.com/wiki/SK_Telecom_T1) \ [LoL Esports](http://www.lolesports.com/en_US/lck/lck_2017_spring/teams/sktelecom-t1)|
+|2|[KT Rolster](http://kt-sports.co.kr/)|10 - 4|23 - 10|4W|4-1|[EsportsWikis](http://lol.esportswikis.com/wiki/KT_Rolster) \ [LoL Esports](http://www.lolesports.com/en_US/lck/lck_2017_spring/teams/kt-rolster)|
+|3|[Samsung Galaxy](http://www.facebook.com/ssgalaxyteam)|9 - 4|20 - 12|2W|4-1|[EsportsWikis](http://lol.esportswikis.com/wiki/Samsung_Galaxy) \ [LoL Esports](http://www.lolesports.com/en_US/lck/lck_2017_spring/teams/samsung-galaxy)|
+|4|[MVP](http://www.mvpzine.com/)|8 - 5|18 - 13|2L|3-2|[EsportsWikis](http://lol.esportswikis.com/wiki/MVP) \ [LoL Esports](http://www.lolesports.com/en_US/lck/lck_2017_spring/teams/mvp)|
+|5|[Longzhu Gaming](http://longzhugaming.com/)|8 - 6|18 - 17|1W|4-1|[EsportsWikis](http://lol.esportswikis.com/wiki/Longzhu_Gaming) \ [LoL Esports](http://www.lolesports.com/en_US/lck/lck_2017_spring/teams/longzhu-incredible-miracle)|
+|6|[Afreeca Freecs](https://www.facebook.com/AfreecaFreecs/)|7 - 6|17 - 16|1L|3-2|[EsportsWikis](http://lol.esportswikis.com/wiki/Afreeca_Freecs) \ [LoL Esports](http://www.lolesports.com/en_US/lck/lck_2017_spring/teams/afreeca-freecs)|
+|7|[ROX Tigers](https://www.facebook.com/TigersLOL/)|5 - 8|14 - 20|1L|1-4|[EsportsWikis](http://lol.esportswikis.com/wiki/ROX_Tigers) \ [LoL Esports](http://www.lolesports.com/en_US/lck/lck_2017_spring/teams/koo-tigers)|
+|8|[bbq Olivers](http://esportsconnected.com/)|4 - 9|11 - 19|2L|1-4|[EsportsWikis](http://lol.esportswikis.com/wiki/Bbq_Olivers) \ [LoL Esports](http://www.lolesports.com/en_US/lck/lck_2017_spring/teams/ever)|
+|9|[Jin Air Green Wings](http://greenwings.jinair.com/)|2 - 11|9 - 22|2L|3-2|[EsportsWikis](http://lol.esportswikis.com/wiki/Jin_Air_Green_Wings) \ [LoL Esports](http://www.lolesports.com/en_US/lck/lck_2017_spring/teams/jin-air-green-wings)|
+|10|[Kongdoo Monster](http://kongdoo.com/)|1 - 12|6 - 25|6L|0-5|[EsportsWikis](http://lol.esportswikis.com/wiki/Kongdoo_Monster) \ [LoL Esports](http://www.lolesports.com/en_US/lck/lck_2017_spring/teams/najin-e-mfire)|
+
