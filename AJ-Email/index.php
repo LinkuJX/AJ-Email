@@ -22,58 +22,19 @@ include('head.html');
                 <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
             </div>
             <div class="panel-body">
-                <div class="form-group col-xs-3" id="player-name">
-                    <label for="player-name-input">Player Name:</label>
-                    <input type="text" class="form-control" id="player-name-input">
+                <div class="artificial-row">
+                    <input type="text" class="form-inline" id="player-name-input" placeholder="Player Name" value="">
+                    <label for="accepted-all-id-input" class="input-label">Accepted All ID</label>
+                    <input type="checkbox" id="accepted-all-id-input" data-toggle="toggle" data-on="Yes" data-off="No" data-size="mini">
+                    <label for="working-days-input" class="input-label">Working Days</label>
+                    <input type="checkbox" id="working-days-input" class="form-control" data-toggle="toggle" data-on="7" data-off="1/2" data-size="mini">
                 </div>
-                <div class="radio-inline col-xs-2" id="accepted-all-id">
-                    <label for="accepted-all-id-radio">
-                        Accepted All ID:
-                    </label>
-                    <form id="accepted-all-id-radio">
-                        <label class="radio-inline">
-                            <input type="radio" name="accepted-all-id-radio-option" id="accepted-all-id-radio-option-1">
-                            Yes
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="accepted-all-id-radio-option" id="accepted-all-id-radio-option-2">
-                            No
-                        </label>
-                    </form>
-                </div>
-                <div class="radio-inline col-xs-2" id="working-days">
-                    <label for="working-days-radio">
-                        Working Days:
-                    </label>
-                    <form id="working-days-radio">
-                        <label class="radio-inline">
-                            <input type="radio" name="working-days-radio-option" id="working-days-radio-option-1">
-                            1/2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="working-days-radio-option" id="working-days-radio-option-2">
-                            7
-                        </label>
-                    </form>
-                </div>
-                <div class="radio-inline col-xs-4" id="game-type">
-                    <label for="game-type-radio">
-                        Game Type:
-                    </label>
-                    <form id="game-type-radio">
-                        <label class="radio-inline">
-                            <input type="radio" name="game-type-radio-option" id="game-type-radio-option-1">
-                            MF
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="game-type-radio-option" id="game-type-radio-option-2">
-                            PW
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="game-type-radio-option" id="game-type-radio-option-3">
-                            SP
-                        </label>
-                    </form>
+                <div class="artificial-row">
+                    <div class="btn-group" id="brand">
+                        <button type="button" class="btn btn-default btn-md btn-brand active">mFortune</button>
+                        <button type="button" class="btn btn-default btn-md btn-brand">PocketWin</button>
+                        <button type="button" class="btn btn-default btn-md btn-brand">Mr Spin</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,12 +50,10 @@ include('head.html');
                         <input type="checkbox" data-toggle="toggle" data-on="ADD" data-off="ADD" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="PayPal" data-off="PayPal" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="Card" data-off="Card" data-size="mini">
-                        <label class="checkbox-label">Card #: </label>
-                        <input type="text" class="form-inline">
+                        <input type="text" class="form-inline" placeholder="Card #" value="">
                         <input type="checkbox" data-toggle="toggle" data-on="POP" data-off="POP" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="3P" data-off="3P" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="Recent" data-off="Recent" data-size="mini">
-                        <label class="checkbox-label">Date: </label>
                         <input type="date" class="form-inline">
                     </div>
                     <div class="artificial-row"><!--2nd Row-->
@@ -102,11 +61,10 @@ include('head.html');
                         <input type="checkbox" data-toggle="toggle" data-on="ADD Change" data-off="ADD Change" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="PP Trans." data-off="PP Trans." data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="3P Card" data-off="3P Card" data-size="mini">
-                        <label class="checkbox-label">3P Card #: </label>
-                        <input type="text" class="form-inline">
+                        <input type="text" class="form-inline" placeholder="3P Card #" value="">
                         <input type="checkbox" data-toggle="toggle" data-on="Payment" data-off="Payment" data-size="mini">
-                        <label class="checkbox-label">Amount: </label>
-                        <input type="number" class="form-inline">
+                        <label>£</label>
+                        <input type="number" class="form-inline" placeholder="Amount" value="0">
                     </div>
                     <div class="artificial-row"><!--3rd Row-->
                         <input type="checkbox" data-toggle="toggle" data-on="PP 3P DOB" data-off="PP 3P DOB" data-size="mini">
@@ -119,18 +77,24 @@ include('head.html');
                         <input type="checkbox" data-toggle="toggle" data-on="POP 3P ADD" data-off="POP 3P ADD" data-size="mini">
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Cannot Accept</h3>
+                <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+            </div>
+            <div class="panel-body">
                 <div class="form-group" id="cannot-accept">
                     <div class="artificial-row"> <!-- Class is or CSS use --><!--First Row-->
                         <input type="checkbox" data-toggle="toggle" data-on="DOB" data-off="DOB" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="ADD" data-off="ADD" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="PayPal" data-off="PayPal" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="Card" data-off="Card" data-size="mini">
-                        <label class="checkbox-label">Card #: </label>
-                        <input type="text" class="form-inline">
+                        <input type="text" class="form-inline" placeholder="Card #" value="">
                         <input type="checkbox" data-toggle="toggle" data-on="POP" data-off="POP" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="3P" data-off="3P" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="Recent" data-off="Recent" data-size="mini">
-                        <label class="checkbox-label">Date: </label>
                         <input type="date" class="form-inline">
                     </div>
                     <div class="artificial-row"><!--2nd Row-->
@@ -138,11 +102,10 @@ include('head.html');
                         <input type="checkbox" data-toggle="toggle" data-on="ADD Change" data-off="ADD Change" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="PP Trans." data-off="PP Trans." data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="3P Card" data-off="3P Card" data-size="mini">
-                        <label class="checkbox-label">3P Card #: </label>
-                        <input type="text" class="form-inline">
+                        <input type="text" class="form-inline" placeholder="3P Card #" value="">
                         <input type="checkbox" data-toggle="toggle" data-on="Payment" data-off="Payment" data-size="mini">
-                        <label class="checkbox-label">Amount: </label>
-                        <input type="number" class="form-inline">
+                        <label>£</label>
+                        <input type="number" class="form-inline" placeholder="Amount" value="0">
                     </div>
                     <div class="artificial-row"><!--3rd Row-->
                         <input type="checkbox" data-toggle="toggle" data-on="PP 3P DOB" data-off="PP 3P DOB" data-size="mini">
@@ -155,32 +118,36 @@ include('head.html');
                         <input type="checkbox" data-toggle="toggle" data-on="POP 3P ADD" data-off="POP 3P ADD" data-size="mini">
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">ID Required</h3>
+                <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+            </div>
+            <div class="panel-body">
                 <div class="form-group" id="id-required">
                     <div class="artificial-row"> <!-- Class is or CSS use --><!--First Row-->
                         <input type="checkbox" data-toggle="toggle" data-on="DOB" data-off="DOB" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="ADD" data-off="ADD" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="PayPal" data-off="PayPal" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="Card" data-off="Card" data-size="mini">
-                        <label class="checkbox-label">Card #: </label>
-                        <input type="text" class="form-inline">
+                        <input type="text" class="form-inline" placeholder="Card #" value="">
                         <input type="checkbox" data-toggle="toggle" data-on="POP" data-off="POP" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="3P" data-off="3P" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="Recent" data-off="Recent" data-size="mini">
-                        <label class="checkbox-label">Date: </label>
                         <input type="date" class="form-inline">
-                        <label class="checkbox-label">Phone #: </label>
-                        <input type="text" class="form-inline">
+                        <input type="text" class="form-inline" placeholder="Phone #" value="">
                     </div>
                     <div class="artificial-row"><!--2nd Row-->
                         <input type="checkbox" data-toggle="toggle" data-on="Name Change" data-off="Name Change" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="ADD Change" data-off="ADD Change" data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="PP Trans." data-off="PP Trans." data-size="mini">
                         <input type="checkbox" data-toggle="toggle" data-on="3P Card" data-off="3P Card" data-size="mini">
-                        <label class="checkbox-label">3P Card #: </label>
-                        <input type="text" class="form-inline">
+                        <input type="text" class="form-inline" placeholder="3P Card #" value="">
                         <input type="checkbox" data-toggle="toggle" data-on="Payment" data-off="Payment" data-size="mini">
-                        <label class="checkbox-label">Amount: </label>
-                        <input type="number" class="form-inline">
+                        <label>£</label>
+                        <input type="number" class="form-inline" placeholder="Amount" value="0">
                     </div>
                     <div class="artificial-row"><!--3rd Row-->
                         <input type="checkbox" data-toggle="toggle" data-on="PP 3P DOB" data-off="PP 3P DOB" data-size="mini">
