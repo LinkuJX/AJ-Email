@@ -24,7 +24,7 @@ body {
 
 .toggle.btn{
     min-width: 59px;
-    min-height: 34px;
+    min-height: 30px !important;
 }
 
 .artificial-row {
@@ -33,4 +33,16 @@ body {
 
 .number-input {
     margin-right: 30px;
+}
+
+label {
+    display: inline-block;
+    float: middle;
+    clear: left;
+    text-align: right;
+}
+
+input {
+  display: inline-block;
+  float: middle;
 }
