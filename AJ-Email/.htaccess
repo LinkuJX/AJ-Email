@@ -1,4 +1,4 @@
-DirectoryIndex index.php
+DirectoryIndex index.html
 
 <FilesMatch "\.(?:html|php)$">
 	Order Allow,Deny
@@ -9,7 +9,7 @@ DirectoryIndex index.php
     deny from all
 </Files>
 
-<Files index.php>
+<Files index.html>
     Order Allow,Deny
     Allow from all
 </Files>
