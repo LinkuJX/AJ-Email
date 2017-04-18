@@ -50,3 +50,7 @@ input {
   display: inline-block;
   float: middle;
 }
+
+.btn-sm > .toggle-group {
+    top: -3px;
+}

@@ -11,11 +11,13 @@
         <label for="working-days-input" class="input-label">Working Days</label>
         <toggle ng-model="workingDays" ng-change="changed()" on="7" off="1/2"></toggle>
     </div>
+</div>
+<div class="artificial-row">
     <div class="btn-group" id="brand">
-        <label class="btn btn-primary" 
-               ng-repeat="brand in brands"
-               ng-click="setBrand(brand)"
-               ng-class="{active:brand==email.brand}"
-               btn-radio="{{brand.value}}">{{brand.text}}</label>
+        <button class="btn btn-default"
+                ng-repeat="brand in brands"
+                ng-click="setBrand(brand)"
+                ng-class="{active:brand==email.brand}"
+                btn-radio="{{brand.value}}">{{brand.text}}</button>
     </div>
 </div>

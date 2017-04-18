@@ -1,37 +1,41 @@
-<div class="form-group" id="cannot-accept">
+<div class="form-group form-inline" id="received">
     <div class="artificial-row">
-        <!-- Class is or CSS use --><!--First Row-->
-        <input type="checkbox" data-toggle="toggle" data-on="DOB" data-off="DOB" data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="ADD" data-off="ADD" data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="PayPal" data-off="PayPal" data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="Card" data-off="Card" data-size="mini">
-        <input type="text" class="form-inline" placeholder="Card #" value="">
-        <input type="checkbox" data-toggle="toggle" data-on="POP" data-off="POP" data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="3P" data-off="3P" data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="Recent" data-off="Recent" data-size="mini">
-        <input type="date" class="form-inline">
+        <!-- Class is for CSS use -->
+        <!--First Row-->
+        <toggle ng-model="toggleValue" ng-change="changed()" on="DOB" off="DOB"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="ADD" off="ADD"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="PayPal" off="PayPal"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="Card" off="Card"></toggle>
+        <input type="text" class="form-control" placeholder="Card #" value="">
+        <toggle ng-model="toggleValue" ng-change="changed()" on="POP" off="POP"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="3P" off="3P"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="Recent" off="Recent"></toggle>
+        <input type="date" class="form-control">
     </div>
     <div class="artificial-row">
         <!--2nd Row-->
-        <input type="checkbox" data-toggle="toggle" data-on="Name Change" data-off="Name Change" data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="ADD Change" data-off="ADD Change" data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="PP Trans." data-off="PP Trans." data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="3P Card" data-off="3P Card" data-size="mini">
-        <input type="text" class="form-inline" placeholder="3P Card #" value="">
-        <input type="checkbox" data-toggle="toggle" data-on="Payment" data-off="Payment" data-size="mini">
-        <label>£</label>
-        <input type="number" class="form-inline" placeholder="Amount" value="0">
+        <toggle ng-model="toggleValue" ng-change="changed()" on="Name Change" off="Name Change"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="ADD Change" off="ADD Change"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="PP Trans." off="PP Trans."></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="3P Card" off="3P Card"></toggle>
+        <input type="text" class="form-control" placeholder="3P Card #" value="">
+        <toggle ng-model="toggleValue" ng-change="changed()" on="Payment" off="Payment"></toggle>
+        <div class="input-group">
+            <span class="input-group-addon">&#163;</span>
+            <input class="form-control" aria-label="Amount (to the nearest pound)">
+            <span class="input-group-addon">.00</span>
+        </div>
     </div>
     <div class="artificial-row">
         <!--3rd Row-->
-        <input type="checkbox" data-toggle="toggle" data-on="PP 3P DOB" data-off="PP 3P DOB" data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="CC 3P DOB" data-off="CC 3P DOB" data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="POP 3P DOB" data-off="POP 3P DOB" data-size="mini">
+        <toggle ng-model="toggleValue" ng-change="changed()" on="PP 3P DOB" off="PP 3P DOB"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="CC 3P DOB" off="CC 3P DOB"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="POP 3P DOB" off="POP 3P DOB"></toggle>
     </div>
     <div class="artificial-row">
         <!--4th Row-->
-        <input type="checkbox" data-toggle="toggle" data-on="PP 3P ADD" data-off="PP 3P ADD" data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="CC 3P ADD" data-off="CC 3P ADD" data-size="mini">
-        <input type="checkbox" data-toggle="toggle" data-on="POP 3P ADD" data-off="POP 3P ADD" data-size="mini">
+        <toggle ng-model="toggleValue" ng-change="changed()" on="PP 3P ADD" off="PP 3P ADD"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="CC 3P ADD" off="CC 3P ADD"></toggle>
+        <toggle ng-model="toggleValue" ng-change="changed()" on="POP 3P ADD" off="POP 3P ADD"></toggle>
     </div>
 </div>
