@@ -1,0 +1,21 @@
+<div class="artificial-row form-inline">
+    <div>
+        <label for="accepted-all-id-input" class="input-label">Player Name</label>
+        <input type="text" class="form-control" ng-model="playerName">
+    </div>
+    <div>
+        <label for="accepted-all-id-input" class="input-label">Accepted All ID</label>
+        <toggle ng-model="acceptAllId" ng-change="changed()" on="Yes" off="No"></toggle>
+    </div>
+    <div>
+        <label for="working-days-input" class="input-label">Working Days</label>
+        <toggle ng-model="workingDays" ng-change="changed()" on="7" off="1/2"></toggle>
+    </div>
+    <div class="btn-group" id="brand">
+        <label class="btn btn-primary" 
+               ng-repeat="brand in brands"
+               ng-click="setBrand(brand)"
+               ng-class="{active:brand==email.brand}"
+               btn-radio="{{brand.value}}">{{brand.text}}</label>
+    </div>
+</div>
