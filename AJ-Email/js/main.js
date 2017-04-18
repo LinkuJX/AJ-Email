@@ -21,6 +21,6 @@ $(document).ready(function(){
             $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
         }
     });
+    console.log("Amount-money inputmask");
     
-    $(".inputgroup input").inputmask();
 });
