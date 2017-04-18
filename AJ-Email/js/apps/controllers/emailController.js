@@ -25,6 +25,9 @@ function EmailCtrl($scope, $http) {
     ];
 
     $scope.email = {
+        playerName: '',
+        acceptAllId: false,
+        workingDays: true,
         brand: {},
     }
 

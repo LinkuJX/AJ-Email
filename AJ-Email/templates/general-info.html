@@ -1,23 +1,30 @@
-<div class="artificial-row form-inline">
-    <div>
-        <label for="accepted-all-id-input" class="input-label">Player Name</label>
-        <input type="text" class="form-control" ng-model="playerName">
+<div class="form-horizontal">
+    <div class="form-group">
+        <label for="input-player-name" class="col-sm-2 control-label">Player Name</label>
+        <div class="col-sm-6">
+            <input id="input-player-name" type="text" class="form-control" ng-model="email.playerName">
+        </div>
     </div>
-    <div>
-        <label for="accepted-all-id-input" class="input-label">Accepted All ID</label>
-        <toggle ng-model="acceptAllId" ng-change="changed()" on="Yes" off="No"></toggle>
+    <div class="form-group">
+        <label for="accepted-all-id-input" class="col-sm-2 control-label">Accepted All ID</label>
+        <div class="col-sm-6">
+            <toggle ng-model="email.acceptAllId" ng-change="changed()" on="Yes" off="No"></toggle>
+        </div>
     </div>
-    <div>
-        <label for="working-days-input" class="input-label">Working Days</label>
-        <toggle ng-model="workingDays" ng-change="changed()" on="7" off="1/2"></toggle>
+    <div class="form-group">
+        <label for="working-days-input" class="col-sm-2 control-label">Working Days</label>
+        <div class="col-sm-6">
+            <toggle ng-model="email.workingDays" ng-change="changed()" on="7" off="1/2"></toggle>
+        </div>
     </div>
-</div>
-<div class="artificial-row">
-    <div class="btn-group" id="brand">
-        <button class="btn btn-default"
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Brand</label>
+        <div class="col-sm-6 btn-group" id="brand">
+            <button class="btn btn-default"
                 ng-repeat="brand in brands"
                 ng-click="setBrand(brand)"
                 ng-class="{active:brand==email.brand}"
                 btn-radio="{{brand.value}}">{{brand.text}}</button>
+        </div>
     </div>
 </div>
