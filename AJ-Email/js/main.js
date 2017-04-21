@@ -1,7 +1,8 @@
 $(document).ready(function(){
-    
+    // note: when the 'document is ready' not all html elements are rendered
+    // e.g., all html code inside the .html files in the /templates folder
     console.log("READY");
-    
+
     // Brand Selection Buttons
     $("#brand button.btn-brand").click(function() {
         $("#brand button.btn-brand").removeClass('active');
@@ -21,6 +22,4 @@ $(document).ready(function(){
             $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
         }
     });
-    console.log("Amount-money inputmask");
-    
 });
