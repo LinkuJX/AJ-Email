@@ -25,7 +25,7 @@ function EmailCtrl($scope, $http) {
     ];
 
     $scope.email = {
-        playerName: '',
+        playerName: 'Bob',
         acceptAllId: false,
         workingDays: true,
         brand: {},
@@ -35,6 +35,14 @@ function EmailCtrl($scope, $http) {
 
     $scope.setBrand = function (brand) {
         $scope.email.brand = brand;
+    };
+
+    $scope.generateOutput = function () {
+        var outputData = $scope.email;
+        console.log("outputData:", outputData);
+        var template = $.templates('#outputTemplate');
+        var output = template.render(outputData);
+        $scope.output = output;
     };
 };
 
