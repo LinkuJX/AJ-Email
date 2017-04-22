@@ -1,218 +1,283 @@
-<div class="artificial-row">
-    <label class="checkbox-label">DOB </label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>out of date </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="DOB" data-off="DOB" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Expiry" data-off="Expiry" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="License #" data-off="License #" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Pass #" data-off="Pass #" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">DOB </label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>out of date </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="DOB" data-off="DOB"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Expiry" data-off="Expiry"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="License #" data-off="License #"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Pass #" data-off="Pass #"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">Name Change </label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Name Before" data-off="Name Before" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Name After" data-off="Name After" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">Name Change </label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name Before" data-off="Name Before"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name After" data-off="Name After"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">ADD </label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>out of date </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Address" data-off="Address" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Logo" data-off="Logo" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Date" data-off="Date" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">ADD </label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>out of date </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Address" data-off="Address"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Logo" data-off="Logo"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Date" data-off="Date"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">ADD  Change</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>out of date </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Address" data-off="Address" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Logo" data-off="Logo" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Date" data-off="Date" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">ADD  Change</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>out of date </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Address" data-off="Address"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Logo" data-off="Logo"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Date" data-off="Date"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">Paypal</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Full Name" data-off="Full Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Paypal Logo" data-off="Paypal Logo" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">Paypal</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Full Name" data-off="Full Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Paypal Logo" data-off="Paypal Logo"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">Paypal Transaction</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Date" data-off="Date" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Amount" data-off="Amount" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">Paypal Transaction</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Date" data-off="Date"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Amount" data-off="Amount"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">Paypal 3p Date of Birth</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>out of date </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="DOB" data-off="DOB" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Expiry" data-off="Expiry" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="License #" data-off="License #" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Pass #" data-off="Pass #" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">Paypal 3p Date of Birth</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>out of date </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="DOB" data-off="DOB"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Expiry" data-off="Expiry"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="License #" data-off="License #"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Pass #" data-off="Pass #"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">Paypal 3p Address</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>out of date </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Address" data-off="Address" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Logo" data-off="Logo" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Date" data-off="Date" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">Paypal 3p Address</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>out of date </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Address" data-off="Address"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Logo" data-off="Logo"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Date" data-off="Date"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">Card</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="First 6" data-off="First 6" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Last 4" data-off="Last 4" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Expiry" data-off="Expiry" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">Card</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="First 6" data-off="First 6"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Last 4" data-off="Last 4"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Expiry" data-off="Expiry"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">3p Card</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="First 6" data-off="First 6" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Last 4" data-off="Last 4" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Expiry" data-off="Expiry" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">3p Card</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="First 6" data-off="First 6"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Last 4" data-off="Last 4"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Expiry" data-off="Expiry"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">Credit Card 3p Date of Birth</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>out of date </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="DOB" data-off="DOB" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Expiry" data-off="Expiry" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="License #" data-off="License #" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Pass #" data-off="Pass #" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">Credit Card 3p Date of Birth</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>out of date </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="DOB" data-off="DOB"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Expiry" data-off="Expiry"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="License #" data-off="License #"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Pass #" data-off="Pass #"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">Credit Card 3p Address</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>out of date </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Address" data-off="Address" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Logo" data-off="Logo" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Date" data-off="Date" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">Credit Card 3p Address</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>out of date </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Address" data-off="Address"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Logo" data-off="Logo"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Date" data-off="Date"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">POP 3P Recent</label>
-    <input type="checkbox" data-toggle="toggle" data-on="POP" data-off="POP" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="3P" data-off="3P" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Recent" data-off="Recent" data-size="mini">
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>out of date </option>
-        <option>cannot see </option>
-    </select>
-    <label class="checkbox-label"> : </label>
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Network" data-off="Network" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Date" data-off="Date" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Amount" data-off="Amount" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">POP 3P Recent</label>
+    <div class="col-md-3">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="POP" data-off="POP"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="3P" data-off="3P"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Recent" data-off="Recent"></toggle>
+    </div>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>out of date </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-6">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Network" data-off="Network"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Date" data-off="Date"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Amount" data-off="Amount"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">Payment</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>out of date </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Network" data-off="Network" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Date" data-off="Date" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Indebting Balance" data-off="Indebting Balance" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">Payment</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>out of date </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Network" data-off="Network"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Date" data-off="Date"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Indebting Balance" data-off="Indebting Balance"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">POP 3P DOB</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>out of date </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="DOB" data-off="DOB" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Date" data-off="Date" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Expiry" data-off="Expiry" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="License #" data-off="License #" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Pass #" data-off="Pass #" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">POP 3P DOB</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>out of date </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="DOB" data-off="DOB"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Date" data-off="Date"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Expiry" data-off="Expiry"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="License #" data-off="License #"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Pass #" data-off="Pass #"></toggle>
+    </div>
 </div>
-<div class="artificial-row">
-    <label class="checkbox-label">POP 3P ADD</label>
-    <select class="selectpicker" type="form-control">
-        <option></option>
-        <option>blurred </option>
-        <option>not accepted </option>
-        <option>out of date </option>
-        <option>cannot see </option>
-    </select>
-    <input type="checkbox" data-toggle="toggle" data-on="Name" data-off="Name" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Address" data-off="Address" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Logo" data-off="Logo" data-size="mini">
-    <input type="checkbox" data-toggle="toggle" data-on="Date" data-off="Date" data-size="mini">
+<div class="row form-group">
+    <label class="col-md-1 checkbox-label">POP 3P ADD</label>
+    <div class="col-md-2">
+        <select class="form-control selectpicker" type="form-control">
+            <option></option>
+            <option>blurred </option>
+            <option>not accepted </option>
+            <option>out of date </option>
+            <option>cannot see </option>
+        </select>
+    </div>
+    <div class="col-md-9">
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Name" data-off="Name"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Address" data-off="Address"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Logo" data-off="Logo"></toggle>
+        <toggle ng-model="cannotAcceptReasons" ng-change="changed()" data-on="Date" data-off="Date"></toggle>
+    </div>
 </div>
