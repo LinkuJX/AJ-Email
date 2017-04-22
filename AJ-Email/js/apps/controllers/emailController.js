@@ -29,7 +29,27 @@ function EmailCtrl($scope, $http) {
         acceptAllId: false,
         workingDays: true,
         brand: {},
-    }
+        received: {
+            dob:        { selected: false, text: 'your date of birth' },
+            add:        { selected: false, text: 'your address' },
+            paypal:     { selected: false, text: 'the PayPal account holder' },
+            card:       { selected: false, text: 'the card ending' },
+            pop:        { selected: false, text: 'the mobile phone bill dated' },
+            thirdParty: { selected: false, text: 'the mobile phone bill dated' },
+            recent:     { selected: false, text: 'the mobile phone bill' },
+            nameChange: { selected: false, text: 'your name change' },
+            addChange:  { selected: false, text: 'your change of address' },
+            ppTrans:    { selected: false, text: 'the PayPal transaction' },
+            payment:    { selected: false, text: 'the payment for the mobile phone bill' },
+            pp3pDob:    { selected: false, text: "the 3rd party PayPal holder's date of birth" },
+            cc3pDob:    { selected: false, text: "the 3rd party card holder's date of birth" },
+            pop3pDob:   { selected: false, text: "the 3rd party contract holder's date of birth" },
+            thirdPartyCard: { selected: false, text: 'the 3rd party card ending' },
+            pp3rdPartyAdd:  { selected: false, text: "the 3rd party PayPal holder's address" },
+            cc3rdPartyAdd:  { selected: false, text: "the 3rd party card holder's address" },
+            pop3rdPartyAdd: { selected: false, text: "the 3rd party contract holder's address" },
+        },
+    };
 
     $scope.email.brand = $scope.brands[0];
 
@@ -38,11 +58,46 @@ function EmailCtrl($scope, $http) {
     };
 
     $scope.generateOutput = function () {
-        var outputData = $scope.email;
+        var receivedData = getReceivedText($scope.email.received);
+        var outputData = {
+            playerName: $scope.email.playerName,
+            receivedCount: receivedData.count,
+            receivedInfo: receivedData.text,
+        };
         console.log("outputData:", outputData);
         var template = $.templates('#outputTemplate');
         var output = template.render(outputData);
         $scope.output = output;
+    };
+
+    var getReceivedText = function (received) {
+        var result = [];
+        var selected = 0;
+        for (key in received) {
+            if (received[key] != null &&
+                received[key].hasOwnProperty('selected') &&
+                received[key].hasOwnProperty('text')) {
+                // .selected should be boolean
+                if (received[key].selected) {
+                    selected++;
+                    result.push(received[key].text); // .text should be string
+                }
+            }
+        }
+        var resultText = '';
+        var resultLength = result.length;
+        if (resultLength > 0) {
+            var last = result.pop();
+            if (resultLength == 1) {
+                resultText = last;
+            } else {
+                resultText = result.join(", ") + ' and ' + last;
+            }
+        }
+        return {
+            count: selected,
+            text: resultText
+        };
     };
 };
 

@@ -119,8 +119,12 @@
 		</div>
 	</footer>
 
-    <script id="outputTemplate" type="text/x-jsrender" src="input-files/output-template.txt">
-Hello {{:playerName}}.
+    <script id="outputTemplate" type="text/x-jsrender">
+Dear {{:playerName}}
+Thank you for your email regarding identification.
+{{if receivedCount > 0}}
+We are pleased to inform we have received the proof of {{:receivedInfo}}, and {{if receivedCount == 1}}this has{{else}}these have{{/fi}} been applied to your account. We thank you for taking the time to send this information to us.
+{{/if}}
     </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
