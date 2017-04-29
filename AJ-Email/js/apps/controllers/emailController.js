@@ -36,7 +36,6 @@ function EmailCtrl($scope, $http) {
             card:       { selected: false, text: 'the card ending' },
             pop:        { selected: false, text: 'the mobile phone bill dated' },
             thirdParty: { selected: false, text: 'the mobile phone bill dated' },
-            recent:     { selected: false, text: 'the mobile phone bill' },
             cardNumber: '', // start as string so the placeholder is shown
             nameChange: { selected: false, text: 'your name change' },
             addChange:  { selected: false, text: 'your change of address' },
