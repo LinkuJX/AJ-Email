@@ -7,7 +7,7 @@ angular
     .directive('idRequired', idRequired)
     .directive('cannotAcceptReasons', cannotAcceptReasons);
 
-function EmailCtrl($scope, $http) {
+function EmailCtrl($scope, $http, $filter) {
     // Todo: read this from input file
     $scope.brands = [
         {
@@ -34,9 +34,9 @@ function EmailCtrl($scope, $http) {
             add:        { selected: false, text: 'your address' },
             paypal:     { selected: false, text: 'the PayPal account holder' },
             card:       { selected: false, text: 'the card ending', aditionalInfo: function() { return $scope.email.received.cardNumber } },
-            pop:        { selected: false, text: 'the mobile phone bill dated' },
-            thirdParty: { selected: false, text: 'the mobile phone bill dated' },
             cardNumber: '', // start as string so the placeholder is shown
+            pop:        { selected: false, text: 'the mobile phone bill dated', aditionalInfo: function() { return $filter('date')($scope.email.received.date, "dd/MM/yyyy"); } },
+            thirdParty: { selected: false, text: '3rd party the mobile phone bill dated', aditionalInfo: function() { return $filter('date')($scope.email.received.date, "dd/MM/yyyy"); } },
             nameChange: { selected: false, text: 'your name change' },
             addChange:  { selected: false, text: 'your change of address' },
             ppTrans:    { selected: false, text: 'the PayPal transaction' },
