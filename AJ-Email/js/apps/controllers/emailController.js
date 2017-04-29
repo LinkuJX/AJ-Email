@@ -37,14 +37,17 @@ function EmailCtrl($scope, $http) {
             pop:        { selected: false, text: 'the mobile phone bill dated' },
             thirdParty: { selected: false, text: 'the mobile phone bill dated' },
             recent:     { selected: false, text: 'the mobile phone bill' },
+            cardNumber: '', // start as string so the placeholder is shown
             nameChange: { selected: false, text: 'your name change' },
             addChange:  { selected: false, text: 'your change of address' },
             ppTrans:    { selected: false, text: 'the PayPal transaction' },
             payment:    { selected: false, text: 'the payment for the mobile phone bill' },
+            paymentValue: '',
             pp3pDob:    { selected: false, text: "the 3rd party PayPal holder's date of birth" },
             cc3pDob:    { selected: false, text: "the 3rd party card holder's date of birth" },
             pop3pDob:   { selected: false, text: "the 3rd party contract holder's date of birth" },
             thirdPartyCard: { selected: false, text: 'the 3rd party card ending' },
+            thirdPartyCardNumber: '', // start as string so the placeholder is shown
             pp3rdPartyAdd:  { selected: false, text: "the 3rd party PayPal holder's address" },
             cc3rdPartyAdd:  { selected: false, text: "the 3rd party card holder's address" },
             pop3rdPartyAdd: { selected: false, text: "the 3rd party contract holder's address" },
