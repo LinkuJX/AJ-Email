@@ -33,7 +33,7 @@ function EmailCtrl($scope, $http) {
             dob:        { selected: false, text: 'your date of birth' },
             add:        { selected: false, text: 'your address' },
             paypal:     { selected: false, text: 'the PayPal account holder' },
-            card:       { selected: false, text: 'the card ending' },
+            card:       { selected: false, text: 'the card ending', aditionalInfo: function() { return $scope.email.received.cardNumber } },
             pop:        { selected: false, text: 'the mobile phone bill dated' },
             thirdParty: { selected: false, text: 'the mobile phone bill dated' },
             cardNumber: '', // start as string so the placeholder is shown
@@ -82,7 +82,13 @@ function EmailCtrl($scope, $http) {
                 // .selected should be boolean
                 if (received[key].selected) {
                     selected++;
-                    result.push(received[key].text); // .text should be string
+                    var textToAdd = received[key].text; // .text should be string
+                    if (received[key].hasOwnProperty('aditionalInfo')) {
+                        console.log('found object with aditionalInfo. textToAdd was: ' + textToAdd);
+                        textToAdd += ' ' + received[key]['aditionalInfo'](); // aditionalInfo should be a function
+                        console.log('textToAdd now is: ' + textToAdd);
+                    }
+                    result.push(textToAdd); 
                 }
             }
         }
