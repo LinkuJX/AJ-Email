@@ -90,6 +90,7 @@ function EmailCtrl($scope, $http, $filter) {
             receivedInfo: receivedData.text,
             cannotAcceptCount: thingsNotAccepted.count,
             cannotAcceptStuff: thingsNotAccepted.text,
+            cannotAcceptReasons: ['aaa', 'bbbb', 'cccc'],
         };
         console.log("outputData:", outputData);
         var template = $.templates('#outputTemplate');

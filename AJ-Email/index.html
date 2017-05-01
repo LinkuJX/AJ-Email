@@ -130,6 +130,9 @@ We are pleased to inform we have received the proof of {{:receivedInfo}}. {{if r
 {{/if}}
 {{if cannotAcceptCount > 0}}
 We are, unfortunately, not able to accept the proof of {{:cannotAcceptStuff}}. The reasons why we have not been able to accept these attachments are listed below:
+{{for cannotAcceptReasons}}
+{{:#index+1}}) {{>}}
+{{/for}}
 {{/if}}
     </script>
 
