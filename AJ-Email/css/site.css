@@ -46,6 +46,10 @@ label.control-label {
     font-size: 15px;
 }
 
+.toggle-group .btn {
+    font-size: 14px;
+}
+
 td .row:first-child {
     margin-top: 0px;
 }
