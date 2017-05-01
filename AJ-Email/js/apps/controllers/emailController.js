@@ -50,6 +50,7 @@ function EmailCtrl($scope, $http, $filter) {
             pp3rdPartyAdd:  { selected: false, text: "the 3rd party PayPal holder's address" },
             cc3rdPartyAdd:  { selected: false, text: "the 3rd party card holder's address" },
             pop3rdPartyAdd: { selected: false, text: "the 3rd party contract holder's address" },
+            date: '',
         },
         cannotAccept: {
             dob:        { selected: false, text: 'your date of birth' },
@@ -72,6 +73,7 @@ function EmailCtrl($scope, $http, $filter) {
             pp3rdPartyAdd:  { selected: false, text: "the 3rd party PayPal holder's address" },
             cc3rdPartyAdd:  { selected: false, text: "the 3rd party card holder's address" },
             pop3rdPartyAdd: { selected: false, text: "the 3rd party contract holder's address" },
+            date: '',
         },
     };
 
