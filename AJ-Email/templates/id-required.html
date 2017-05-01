@@ -1,72 +1,72 @@
 <div id="received">
     <table class="table">
         <tr>
-            <td><toggle ng-model="toggleValue" ng-change="changed()" on="DOB" off="DOB"></toggle></td>
-            <td><toggle ng-model="toggleValue" ng-change="changed()" on="ADD" off="ADD"></toggle></td>
-            <td><toggle ng-model="toggleValue" ng-change="changed()" on="PayPal" off="PayPal"></toggle></td>
+            <td><toggle ng-model="email.idRequired.dob.selected" ng-change="changed()" on="DOB" off="DOB"></toggle></td>
+            <td><toggle ng-model="email.idRequired.add.selected" ng-change="changed()" on="ADD" off="ADD"></toggle></td>
+            <td><toggle ng-model="email.idRequired.paypal.selected" ng-change="changed()" on="PayPal" off="PayPal"></toggle></td>
             <td>
                 <div class="row">
                     <div class="col-md-8">
-                        <toggle ng-model="toggleValue" ng-change="changed()" on="Card" off="Card"></toggle>
+                        <toggle ng-model="email.idRequired.card.selected" ng-change="changed()" on="Card" off="Card"></toggle>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8">
-                        <input type="text" class="form-control" placeholder="Card #" value="">
+                        <input ng-model="email.idRequired.cardNumber" type="text" class="form-control" placeholder="Card #" value="">
                     </div>
                 </div>                
             </td>
             <td>
                 <div class="row">
                     <div class="col-md-12">
-                        <toggle ng-model="toggleValue" ng-change="changed()" on="POP" off="POP"></toggle>
-                        <toggle ng-model="toggleValue" ng-change="changed()" on="3P" off="3P"></toggle>
-                        <toggle ng-model="toggleValue" ng-change="changed()" on="Recent" off="Recent"></toggle>
+                        <toggle ng-model="email.idRequired.pop.selected" ng-change="changed()" on="POP" off="POP"></toggle>
+                        <toggle ng-model="email.idRequired.thirdParty.selected" ng-change="changed()" on="3P" off="3P"></toggle>
+                        <toggle ng-model="email.idRequired.recent.selected" ng-change="changed()" on="Recent" off="Recent"></toggle>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <input type="date" class="form-control">
+                        <input ng-model="email.idRequired.date" type="date" class="form-control">
                     </div>
                     <div class="col-md-4">
-                        <input type="text" class="form-control" placeholder="Phone #" value="">
+                        <input ng-model="email.idRequired.phoneNumber" type="text" class="form-control" placeholder="Phone #" value="">
                     </div>
                 </div>
             </td>
         </tr>
         <tr>
             <td>
-                <toggle ng-model="toggleValue" ng-change="changed()" on="Name Change" off="Name Change"></toggle>
+                <toggle ng-model="email.idRequired.nameChange.selected" ng-change="changed()" on="Name Change" off="Name Change"></toggle>
             </td>
             <td>
-                <toggle ng-model="toggleValue" ng-change="changed()" on="ADD Change" off="ADD Change"></toggle>
+                <toggle ng-model="email.idRequired.addChange.selected" ng-change="changed()" on="ADD Change" off="ADD Change"></toggle>
             </td>
             <td>
-                <toggle ng-model="toggleValue" ng-change="changed()" on="PP Trans." off="PP Trans."></toggle>
+                <toggle ng-model="email.idRequired.ppTrans.selected" ng-change="changed()" on="PP Trans." off="PP Trans."></toggle>
             </td>
             <td>
                 <div class="row">
                     <div class="col-md-8">
-                        <toggle ng-model="toggleValue" ng-change="changed()" on="3P Card" off="3P Card"></toggle>
+                        <toggle ng-model="email.idRequired.thirdPartyCard.selected" ng-change="changed()" on="3P Card" off="3P Card"></toggle>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8">
-                        <input type="text" class="form-control" placeholder="3P Card #" value="">
+                        <input ng-model="email.idRequired.thirdPartyCardNumber" type="text" class="form-control" placeholder="3P Card #" value="">
                     </div>
                 </div>
             </td>
             <td>
                 <div class="row">
                     <div class="col-md-12">
-                        <toggle ng-model="toggleValue" ng-change="changed()" on="Payment" off="Payment"></toggle>
+                        <toggle ng-model="email.idRequired.payment.selected" ng-change="changed()" on="Payment" off="Payment"></toggle>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="input-group">
                             <span class="input-group-addon">&#163;</span>
-                            <input type="text" class="form-control money-input" aria-label="Amount (to the nearest pound)" data-inputmask="'mask': '999'">
+                            <input ng-model="email.idRequired.paymentValue" type="text" class="form-control money-input" aria-label="Amount (to the nearest pound)" data-inputmask="'mask': '999'">
                         </div>
                     </div>
                 </div>
@@ -76,26 +76,26 @@
             <!--3rd Row-->
             <td colspan="2"></td>
             <td>
-                <toggle ng-model="toggleValue" ng-change="changed()" on="PP 3P DOB" off="PP 3P DOB"></toggle>
+                <toggle ng-model="email.idRequired.pp3pDob.selected" ng-change="changed()" on="PP 3P DOB" off="PP 3P DOB"></toggle>
             </td>
             <td>
-                <toggle ng-model="toggleValue" ng-change="changed()" on="CC 3P DOB" off="CC 3P DOB"></toggle>
+                <toggle ng-model="email.idRequired.cc3pDob.selected" ng-change="changed()" on="CC 3P DOB" off="CC 3P DOB"></toggle>
             </td>
             <td>
-                <toggle ng-model="toggleValue" ng-change="changed()" on="POP 3P DOB" off="POP 3P DOB"></toggle>
+                <toggle ng-model="email.idRequired.pop3pDob.selected" ng-change="changed()" on="POP 3P DOB" off="POP 3P DOB"></toggle>
             </td>
         </tr>
         <tr>
             <!--4th Row-->
             <td colspan="2"></td>
             <td>
-                <toggle ng-model="toggleValue" ng-change="changed()" on="PP 3P ADD" off="PP 3P ADD"></toggle>
+                <toggle ng-model="email.idRequired.pp3rdPartyAdd.selected" ng-change="changed()" on="PP 3P ADD" off="PP 3P ADD"></toggle>
             </td>
             <td>
-                <toggle ng-model="toggleValue" ng-change="changed()" on="CC 3P ADD" off="CC 3P ADD"></toggle>
+                <toggle ng-model="email.idRequired.cc3rdPartyAdd.selected" ng-change="changed()" on="CC 3P ADD" off="CC 3P ADD"></toggle>
             </td>
             <td>
-                <toggle ng-model="toggleValue" ng-change="changed()" on="POP 3P ADD" off="POP 3P ADD"></toggle>
+                <toggle ng-model="email.idRequired.pop3rdPartyAdd.selected" ng-change="changed()" on="POP 3P ADD" off="POP 3P ADD"></toggle>
             </td>
         </tr>
     </table>
