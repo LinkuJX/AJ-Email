@@ -82,15 +82,15 @@ function EmailCtrl($scope, $http, $filter) {
     };
 
     $scope.generateOutput = function () {
-        var receivedData = getReceivedText($scope.email.received);
-        var thingsNotAccepted = getReceivedText($scope.email.cannotAccept)
+        var receivedData     = getItems($scope.email.received);
+        var cannotAcceptData = getItems($scope.email.cannotAccept);
         var outputData = {
             playerName: $scope.email.playerName,
-            receivedCount: receivedData.count,
-            receivedInfo: receivedData.text,
-            cannotAcceptCount: thingsNotAccepted.count,
-            cannotAcceptStuff: thingsNotAccepted.text,
-            cannotAcceptReasons: ['aaa', 'bbbb', 'cccc'],
+            receivedCount: receivedData.length,
+            receivedInfo: joinItems(receivedData),
+            cannotAcceptCount: cannotAcceptData.length,
+            cannotAcceptInfo: joinItems(cannotAcceptData),
+            cannotAcceptReasons: ['aaa', 'bbbb', 'cccc'], // TODO
         };
         console.log("outputData:", outputData);
         var template = $.templates('#outputTemplate');
@@ -98,7 +98,7 @@ function EmailCtrl($scope, $http, $filter) {
         $scope.output = output;
     };
 
-    var getReceivedText = function (received) {
+    var getItems = function (received) {
         var result = [];
         var selected = 0;
         for (key in received) {
@@ -118,20 +118,21 @@ function EmailCtrl($scope, $http, $filter) {
                 }
             }
         }
+        return result;
+    };
+
+    var joinItems = function (items) {
+        var resultLength = items.length;
         var resultText = '';
-        var resultLength = result.length;
         if (resultLength > 0) {
-            var last = result.pop();
+            var last = items.pop();
             if (resultLength == 1) {
                 resultText = last;
             } else {
-                resultText = result.join(", ") + ' and ' + last;
+                resultText = items.join(", ") + ' and ' + last;
             }
         }
-        return {
-            count: selected,
-            text: resultText
-        };
+        return resultText;
     };
 };
 
