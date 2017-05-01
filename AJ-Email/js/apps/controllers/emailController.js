@@ -117,6 +117,7 @@ function EmailCtrl($scope, $http, $filter) {
     $scope.generateOutput = function () {
         var receivedData     = getItems($scope.email.received);
         var cannotAcceptData = getItems($scope.email.cannotAccept);
+        var idRequiredData   = getItems($scope.email.idRequired);
         var outputData = {
             playerName: $scope.email.playerName,
             receivedCount: receivedData.length,
@@ -124,6 +125,8 @@ function EmailCtrl($scope, $http, $filter) {
             cannotAcceptCount: cannotAcceptData.length,
             cannotAcceptInfo: joinItems(cannotAcceptData),
             cannotAcceptReasons: ['aaa', 'bbbb', 'cccc'], // TODO
+            idRequiredCount: idRequiredData.length,
+            idRequiredItems: idRequiredData,
         };
         console.log("outputData:", outputData);
         var template = $.templates('#outputTemplate');
