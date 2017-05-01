@@ -35,7 +35,7 @@ function EmailCtrl($scope, $http, $filter) {
             paypal:     { selected: false, text: 'the PayPal account holder' },
             card:       { selected: false, text: 'the card ending', aditionalInfo: function() { return $scope.email.received.cardNumber } },
             cardNumber: '', // start as string so the placeholder is shown
-            pop:        { selected: false, text: 'the mobile phone bill dated', aditionalInfo: function() { return $filter('date')($scope.email.received.date, "dd/MM/yyyy"); } },
+            pop:        { selected: false, text: 'the mobile phone bill dated',           aditionalInfo: function() { return $filter('date')($scope.email.received.date, "dd/MM/yyyy"); } },
             thirdParty: { selected: false, text: 'the 3rd party mobile phone bill dated', aditionalInfo: function() { return $filter('date')($scope.email.received.date, "dd/MM/yyyy"); } },
             nameChange: { selected: false, text: 'your name change' },
             addChange:  { selected: false, text: 'your change of address' },
@@ -58,7 +58,7 @@ function EmailCtrl($scope, $http, $filter) {
             paypal:     { selected: false, text: 'the PayPal account holder' },
             card:       { selected: false, text: 'the card ending', aditionalInfo: function() { return $scope.email.cannotAccept.cardNumber } },
             cardNumber: '', // start as string so the placeholder is shown
-            pop:        { selected: false, text: 'the mobile phone bill dated', aditionalInfo: function() { return $filter('date')($scope.email.cannotAccept.date, "dd/MM/yyyy"); } },
+            pop:        { selected: false, text: 'the mobile phone bill dated',           aditionalInfo: function() { return $filter('date')($scope.email.cannotAccept.date, "dd/MM/yyyy"); } },
             thirdParty: { selected: false, text: 'the 3rd party mobile phone bill dated', aditionalInfo: function() { return $filter('date')($scope.email.cannotAccept.date, "dd/MM/yyyy"); } },
             nameChange: { selected: false, text: 'your name change' },
             addChange:  { selected: false, text: 'your change of address' },
