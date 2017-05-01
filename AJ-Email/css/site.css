@@ -45,3 +45,11 @@ input {
 label.control-label {
     font-size: 15px;
 }
+
+td .row:first-child {
+    margin-top: 0px;
+}
+
+td .row {
+    margin-top: 10px;
+}

@@ -1,41 +1,102 @@
-<div class="form-group form-inline" id="received">
-    <div class="artificial-row">
-        <!-- Class is for CSS use -->
-        <!--First Row-->
-        <toggle ng-model="toggleValue" ng-change="changed()" on="DOB" off="DOB"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="ADD" off="ADD"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="PayPal" off="PayPal"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="Card" off="Card"></toggle>
-        <input type="text" class="form-control" placeholder="Card #" value="">
-        <toggle ng-model="toggleValue" ng-change="changed()" on="POP" off="POP"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="3P" off="3P"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="Recent" off="Recent"></toggle>
-        <input type="date" class="form-control">
-        <input type="text" class="form-control" placeholder="Phone #" value="">
-    </div>
-    <div class="artificial-row">
-        <!--2nd Row-->
-        <toggle ng-model="toggleValue" ng-change="changed()" on="Name Change" off="Name Change"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="ADD Change" off="ADD Change"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="PP Trans." off="PP Trans."></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="3P Card" off="3P Card"></toggle>
-        <input type="text" class="form-control" placeholder="3P Card #" value="">
-        <toggle ng-model="toggleValue" ng-change="changed()" on="Payment" off="Payment"></toggle>
-        <div class="input-group">
-            <span class="input-group-addon">&#163;</span>
-            <input type="text" class="form-control money-input" aria-label="Amount (to the nearest pound)" data-inputmask="'mask': '999'">
-        </div>
-    </div>
-    <div class="artificial-row">
-        <!--3rd Row-->
-        <toggle ng-model="toggleValue" ng-change="changed()" on="PP 3P DOB" off="PP 3P DOB"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="CC 3P DOB" off="CC 3P DOB"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="POP 3P DOB" off="POP 3P DOB"></toggle>
-    </div>
-    <div class="artificial-row">
-        <!--4th Row-->
-        <toggle ng-model="toggleValue" ng-change="changed()" on="PP 3P ADD" off="PP 3P ADD"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="CC 3P ADD" off="CC 3P ADD"></toggle>
-        <toggle ng-model="toggleValue" ng-change="changed()" on="POP 3P ADD" off="POP 3P ADD"></toggle>
-    </div>
+<div id="received">
+    <table class="table">
+        <tr>
+            <td><toggle ng-model="toggleValue" ng-change="changed()" on="DOB" off="DOB"></toggle></td>
+            <td><toggle ng-model="toggleValue" ng-change="changed()" on="ADD" off="ADD"></toggle></td>
+            <td><toggle ng-model="toggleValue" ng-change="changed()" on="PayPal" off="PayPal"></toggle></td>
+            <td>
+                <div class="row">
+                    <div class="col-md-8">
+                        <toggle ng-model="toggleValue" ng-change="changed()" on="Card" off="Card"></toggle>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="Card #" value="">
+                    </div>
+                </div>                
+            </td>
+            <td>
+                <div class="row">
+                    <div class="col-md-12">
+                        <toggle ng-model="toggleValue" ng-change="changed()" on="POP" off="POP"></toggle>
+                        <toggle ng-model="toggleValue" ng-change="changed()" on="3P" off="3P"></toggle>
+                        <toggle ng-model="toggleValue" ng-change="changed()" on="Recent" off="Recent"></toggle>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Phone #" value="">
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <toggle ng-model="toggleValue" ng-change="changed()" on="Name Change" off="Name Change"></toggle>
+            </td>
+            <td>
+                <toggle ng-model="toggleValue" ng-change="changed()" on="ADD Change" off="ADD Change"></toggle>
+            </td>
+            <td>
+                <toggle ng-model="toggleValue" ng-change="changed()" on="PP Trans." off="PP Trans."></toggle>
+            </td>
+            <td>
+                <div class="row">
+                    <div class="col-md-8">
+                        <toggle ng-model="toggleValue" ng-change="changed()" on="3P Card" off="3P Card"></toggle>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="3P Card #" value="">
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="row">
+                    <div class="col-md-12">
+                        <toggle ng-model="toggleValue" ng-change="changed()" on="Payment" off="Payment"></toggle>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">&#163;</span>
+                            <input type="text" class="form-control money-input" aria-label="Amount (to the nearest pound)" data-inputmask="'mask': '999'">
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <!--3rd Row-->
+            <td colspan="2"></td>
+            <td>
+                <toggle ng-model="toggleValue" ng-change="changed()" on="PP 3P DOB" off="PP 3P DOB"></toggle>
+            </td>
+            <td>
+                <toggle ng-model="toggleValue" ng-change="changed()" on="CC 3P DOB" off="CC 3P DOB"></toggle>
+            </td>
+            <td>
+                <toggle ng-model="toggleValue" ng-change="changed()" on="POP 3P DOB" off="POP 3P DOB"></toggle>
+            </td>
+        </tr>
+        <tr>
+            <!--4th Row-->
+            <td colspan="2"></td>
+            <td>
+                <toggle ng-model="toggleValue" ng-change="changed()" on="PP 3P ADD" off="PP 3P ADD"></toggle>
+            </td>
+            <td>
+                <toggle ng-model="toggleValue" ng-change="changed()" on="CC 3P ADD" off="CC 3P ADD"></toggle>
+            </td>
+            <td>
+                <toggle ng-model="toggleValue" ng-change="changed()" on="POP 3P ADD" off="POP 3P ADD"></toggle>
+            </td>
+        </tr>
+    </table>
 </div>
