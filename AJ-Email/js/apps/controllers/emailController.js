@@ -51,6 +51,28 @@ function EmailCtrl($scope, $http, $filter) {
             cc3rdPartyAdd:  { selected: false, text: "the 3rd party card holder's address" },
             pop3rdPartyAdd: { selected: false, text: "the 3rd party contract holder's address" },
         },
+        cannotAccept: {
+            dob:        { selected: false, text: 'your date of birth' },
+            add:        { selected: false, text: 'your address' },
+            paypal:     { selected: false, text: 'the PayPal account holder' },
+            card:       { selected: false, text: 'the card ending', aditionalInfo: function() { return $scope.email.cannotAccept.cardNumber } },
+            cardNumber: '', // start as string so the placeholder is shown
+            pop:        { selected: false, text: 'the mobile phone bill dated', aditionalInfo: function() { return $filter('date')($scope.email.cannotAccept.date, "dd/MM/yyyy"); } },
+            thirdParty: { selected: false, text: 'the 3rd party mobile phone bill dated', aditionalInfo: function() { return $filter('date')($scope.email.cannotAccept.date, "dd/MM/yyyy"); } },
+            nameChange: { selected: false, text: 'your name change' },
+            addChange:  { selected: false, text: 'your change of address' },
+            ppTrans:    { selected: false, text: 'the PayPal transaction' },
+            payment:    { selected: false, text: 'the payment of', aditionalInfo: function() { return '£' + $scope.email.cannotAccept.paymentValue + ' for the mobile phone bill' } },
+            paymentValue: '',
+            pp3pDob:    { selected: false, text: "the 3rd party PayPal holder's date of birth" },
+            cc3pDob:    { selected: false, text: "the 3rd party card holder's date of birth" },
+            pop3pDob:   { selected: false, text: "the 3rd party contract holder's date of birth" },
+            thirdPartyCard: { selected: false, text: 'the 3rd party card ending', aditionalInfo: function() { return $scope.email.cannotAccept.thirdPartyCardNumber } },
+            thirdPartyCardNumber: '', // start as string so the placeholder is shown
+            pp3rdPartyAdd:  { selected: false, text: "the 3rd party PayPal holder's address" },
+            cc3rdPartyAdd:  { selected: false, text: "the 3rd party card holder's address" },
+            pop3rdPartyAdd: { selected: false, text: "the 3rd party contract holder's address" },
+        },
     };
 
     $scope.email.brand = $scope.brands[0];
