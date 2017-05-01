@@ -83,10 +83,13 @@ function EmailCtrl($scope, $http, $filter) {
 
     $scope.generateOutput = function () {
         var receivedData = getReceivedText($scope.email.received);
+        var thingsNotAccepted = getReceivedText($scope.email.cannotAccept)
         var outputData = {
             playerName: $scope.email.playerName,
             receivedCount: receivedData.count,
             receivedInfo: receivedData.text,
+            cannotAcceptCount: thingsNotAccepted.count,
+            cannotAcceptStuff: thingsNotAccepted.text,
         };
         console.log("outputData:", outputData);
         var template = $.templates('#outputTemplate');

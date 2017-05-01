@@ -125,9 +125,11 @@
 Dear {{:playerName}},
 
 Thank you for your email regarding identification.
-
 {{if receivedCount > 0}}
 We are pleased to inform we have received the proof of {{:receivedInfo}}. {{if receivedCount == 1}}This has{{else}}These have{{/fi}} been applied to your account, and we thank you for taking the time to send this information to us.
+{{/if}}
+{{if cannotAcceptCount > 0}}
+We are, unfortunately, not able to accept the proof of {{:cannotAcceptStuff}}. The reasons why we have not been able to accept these attachments are listed below:
 {{/if}}
     </script>
 
